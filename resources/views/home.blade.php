@@ -12,7 +12,9 @@
 </head>
 
 <body>
-    hello
+    <div id="app">
+        <example />
+    </div>
 </body>
 
 </html>
