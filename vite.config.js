@@ -17,6 +17,7 @@ export default defineConfig({
     // Add resolve object and aliases
     resolve: {
         alias: {
+            'vue': 'vue/dist/vue.esm-bundler.js',
             '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
             '~resources': '/resources/'
         }
