@@ -1,3 +1,7 @@
+<div id="app">
+    <app-header></app-header>
+</div>
+
 <x-guest-layout>
     <main class="login-form mt-5">
         <div class="container">
@@ -22,7 +26,7 @@
                                 <div class="form-group row mb-3">
                                     <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Email') }}</label>
                                     <div class="col-md-6">
-                                        <input id="email" class="form-control" type="email" name="email" :value="old('email')" required autocomplete="username" />
+                                        <input id="email" class="form-control" type="email" name="email" :value="old('email')" required autocomplete="email" />
                                         <x-input-error :messages="$errors->get('email')" class="mt-2" />
                                     </div>
                                 </div>

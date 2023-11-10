@@ -28,7 +28,7 @@ export default {
 <template>
     <nav class="navbar navbar-expand-lg bg-light border-bottom custom-navbar">
         <div class="container-md">
-            <a class="navbar-brand" href="/"><h1>RETAIL COSMETICS</h1></a>
+            <a class="navbar-brand" href="/"><h1 class="logo">RETAIL COSMETICS</h1></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -64,6 +64,10 @@ a{
 
 .navbar-nav > li > a {
     padding-top: 0px;
-  }
+}
+
+.logo {
+    font-size: 24px; 
+}
 
 </style>

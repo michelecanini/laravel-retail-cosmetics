@@ -92,7 +92,7 @@
                         <!-- menu-top-sidebar-->
                         <ul>
                             <li><a href="{{ url('admin') }}"><i class="fa-solid fa-house" style="color: #ffffff;"></i><span>Dashboard</span></a></li>
-                            <li><a href="{{ route('admin.perfumes.index') }}"><i class="fa fa-rocket" style="color: #ffffff;"></i><span>Perfumes</span></a></li>
+                            {{--<li><a href="{{ route('admin.perfumes.index') }}"><i class="fa fa-rocket" style="color: #ffffff;"></i><span>Perfumes</span></a></li> --}}
                             <li><a href="{{ url('profile') }}"><i class="fa-solid fa-user" style="color: #ffffff;"></i><span>Profile</span></a></li>
                         </ul>  
                     </section>

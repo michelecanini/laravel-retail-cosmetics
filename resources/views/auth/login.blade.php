@@ -1,3 +1,8 @@
+
+<div id="app">
+    <app-header></app-header>
+</div>
+
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
