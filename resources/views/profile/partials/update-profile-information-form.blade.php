@@ -1,11 +1,11 @@
-<section>
+<section class="col-md-6 mx-auto border p-3">
     <header>
-        <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
-            {{ __('Profile Information') }}
+        <h2 class="text-secondary">
+            {{ __('Informazioni sul Profilo') }}
         </h2>
 
-        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-            {{ __("Update your account's profile information and email address.") }}
+        <p class="mt-1 text-muted">
+            {{ __("Aggiorna le informazioni del profilo e l’indirizzo email del tuo account.") }}
         </p>
     </header>
 
@@ -17,30 +17,38 @@
         @csrf
         @method('patch')
 
-        <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" name="name" type="text" class="mt-1 block w-full" :value="old('name', $user->name)" required autofocus autocomplete="name" />
-            <x-input-error class="mt-2" :messages="$errors->get('name')" />
+        <div class="mb-2">
+            <label for="name">{{__('Nome')}}</label>
+            <input class="form-control" type="text" name="name" id="name" autocomplete="name" value="{{old('name', $user->name)}}" required autofocus>
+            @error('name')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $errors->get('name')}}</strong>
+            </span>
+            @enderror
         </div>
 
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" name="email" type="email" class="mt-1 block w-full" :value="old('email', $user->email)" required autocomplete="username" />
-            <x-input-error class="mt-2" :messages="$errors->get('email')" />
+        <div class="mb-2">
+            <label for="email">{{__('Email') }}</label>
+            <input class="form-control" type="email" name="email" id="email" autocomplete="username" value="{{old('email', $user->email)}}" required>
+            @error('email')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $errors->get('email')}}</strong>
+            </span>
+            @enderror
 
             @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! $user->hasVerifiedEmail())
                 <div>
                     <p class="text-sm mt-2 text-gray-800 dark:text-gray-200">
-                        {{ __('Your email address is unverified.') }}
+                        {{ __('Il tuo indirizzo e-mail non è verificato.') }}
 
                         <button form="send-verification" class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800">
-                            {{ __('Click here to re-send the verification email.') }}
+                            {{ __('Clicca qui per inviare nuovamente l’email di verifica.') }}
                         </button>
                     </p>
 
                     @if (session('status') === 'verification-link-sent')
                         <p class="mt-2 font-medium text-sm text-green-600 dark:text-green-400">
-                            {{ __('A new verification link has been sent to your email address.') }}
+                            {{ __('Un nuovo link di verifica è stato inviato al tuo indirizzo email.') }}
                         </p>
                     @endif
                 </div>
@@ -48,7 +56,7 @@
         </div>
 
         <div class="flex items-center gap-4">
-            <x-primary-button>{{ __('Save') }}</x-primary-button>
+            <button type="submit" class="btn btn-primary">{{ __('Salva') }}</button>
 
             @if (session('status') === 'profile-updated')
                 <p
@@ -57,7 +65,7 @@
                     x-transition
                     x-init="setTimeout(() => show = false, 2000)"
                     class="text-sm text-gray-600 dark:text-gray-400"
-                >{{ __('Saved.') }}</p>
+                >{{ __('Salvato.') }}</p>
             @endif
         </div>
     </form>

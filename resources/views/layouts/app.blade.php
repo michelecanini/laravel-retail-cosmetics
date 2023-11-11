@@ -28,8 +28,8 @@
             @endif
 
             <!-- Page Content -->
-            <main>
-                {{ $slot }}
+            <main class="d-flex flex-column">
+                @yield('content')
             </main>
         </div>
     </body>

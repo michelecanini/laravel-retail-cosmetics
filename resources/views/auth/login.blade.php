@@ -6,7 +6,6 @@
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
-
         <main class="login-form mt-5">
             <div class="container">
                 <div class="row justify-content-center">
@@ -64,6 +63,5 @@
                 </div>
             </div>
         </main>
-
 </x-guest-layout>
 

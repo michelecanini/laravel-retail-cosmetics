@@ -68,7 +68,7 @@
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ url('admin') }}">{{__('Dashboard')}}</a>
-                                    <a class="dropdown-item" href="{{ url('profile') }}">{{__('Profile')}}</a>
+                                    <a class="dropdown-item" href="{{ url('profile') }}">{{__('Profilo')}}</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                         document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
@@ -93,19 +93,11 @@
                         <ul>
                             <li><a href="{{ url('admin') }}"><i class="fa-solid fa-house" style="color: #ffffff;"></i><span>Dashboard</span></a></li>
                             {{--<li><a href="{{ route('admin.perfumes.index') }}"><i class="fa fa-rocket" style="color: #ffffff;"></i><span>Perfumes</span></a></li> --}}
-                            <li><a href="{{ url('profile') }}"><i class="fa-solid fa-user" style="color: #ffffff;"></i><span>Profile</span></a></li>
+                            <li><a href="{{ url('profile') }}"><i class="fa-solid fa-user" style="color: #ffffff;"></i><span>Profilo</span></a></li>
                         </ul>  
                     </section>
                     </div>
-                        <!--button bottom sidebar-->
-                    <div class="bot_sidebar">
-                    <section>
-                        <!-- admin-->
-                        <div>
-                            <a href="#"><i class="fa-solid fa-gear" style="color: #ffffff;"></i><span>Admin</span></a>
-                        </div>
-                    </section>
-                    </div>
+                        
                 </div>
                 <!--END SIDEBAR LEFT-->
                 @yield('content')

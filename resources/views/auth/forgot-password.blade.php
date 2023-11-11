@@ -1,3 +1,7 @@
+<div id="app">
+    <app-header></app-header>
+</div>
+
 <x-guest-layout>
     <main class="login-form mt-5">
         <div class="container">
@@ -30,6 +34,4 @@
             </div>
         </div>
     </main>
-    
-    
 </x-guest-layout>
