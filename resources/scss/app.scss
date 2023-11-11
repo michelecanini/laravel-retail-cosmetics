@@ -21,6 +21,17 @@ main{
 }
 
 /*
+NAVBAR ADMIN SETTINGS
+*/
+.navbar-sticky-top
+{
+    position: fixed;
+    z-index: 999;
+    opacity:1;
+    width: 100%;
+}
+
+/*
 SIDEBAR LEFT SETTING
 */
 .sidebar{
@@ -32,6 +43,7 @@ SIDEBAR LEFT SETTING
     position: relative;
     background-color: black;
     position: fixed;
+    margin-top: 62px;
 }
 
 .top_sidebar{

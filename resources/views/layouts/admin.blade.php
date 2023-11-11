@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap" rel="stylesheet">
         <!-- Fontawesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <!-- Vite -->
         @vite(['resources/js/app.js'])
     </head>
@@ -92,9 +94,9 @@
                         <!-- menu-top-sidebar-->
                         <ul>
                             <li><a href="{{ url('admin') }}"><i class="fa-solid fa-house" style="color: #ffffff;"></i><span>Dashboard</span></a></li>
-                            {{--<li><a href="{{ route('admin.perfumes.index') }}"><i class="fa fa-rocket" style="color: #ffffff;"></i><span>Perfumes</span></a></li> --}}
+                            <li><a href="{{ route('admin.perfumes.index') }}"><i class="fa-solid fa-flask" style="color: #ffffff;"></i><span>Profumi</span></a></li>
                             <li><a href="{{ url('profile') }}"><i class="fa-solid fa-user" style="color: #ffffff;"></i><span>Profilo</span></a></li>
-                        </ul>  
+                        </ul>
                     </section>
                     </div>
                         

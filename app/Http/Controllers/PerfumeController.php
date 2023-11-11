@@ -15,7 +15,8 @@ class PerfumeController extends Controller
      */
     public function index()
     {
-        //
+        $perfumes = Perfume::paginate(10);
+        return view('admin.perfumes.index', compact('perfumes'));
     }
 
     /**
@@ -36,7 +37,7 @@ class PerfumeController extends Controller
      */
     public function store(StorePerfumeRequest $request)
     {
-        //
+         //
     }
 
     /**
