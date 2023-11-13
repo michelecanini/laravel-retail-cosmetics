@@ -24,7 +24,7 @@
 
         <div id="app">
             <nav class="navbar navbar-expand-md navbar-light shadow-sm navbar-sticky-top">
-                <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 10fr 1fr;">
+                <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 8fr 1fr;">
                     <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                         <div>
                             <!--logo-->
@@ -35,11 +35,13 @@
                         {{-- config('app.name', 'Laravel') --}}
                     </a>
                     <div class="d-flex align-items-center">
-                        <form class="w-100 me-3"  role="search">
-                        <i class="fa-solid fa-magnifying-glass my-icon"></i>
-                            <input  type="search" class="form-control bg-light p_left" placeholder="Prova a cercare un Profumo" aria-label="Search">
+                        <form class="d-flex w-100 me-3" action="{{route('admin.perfumes.search_perfume')}}" role="search" method="GET">
+                            @csrf
+                            <i class="fa-solid fa-magnifying-glass my-icon"></i>
+                            <input type="search" name="search" id="search" class="form-control bg-light p_left" placeholder="Scrivi il nome del Profumo poi clicca su Cerca a destra, clicca su Cerca senza testo per azzerare la ricerca." aria-label="Search">
+                            <button type="submit" class="btn btn-primary">Cerca</button>
                         </form>
-                    </div>
+                    </div>                    
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                         <span class="navbar-toggler-icon"></span>

@@ -19,6 +19,7 @@
     <div id="app">
         <app-header></app-header>
         <app-carousel></app-carousel>
+        <app-scrolling-text></app-scrolling-text>
         <app-main></app-main>
     </div>
 </body>

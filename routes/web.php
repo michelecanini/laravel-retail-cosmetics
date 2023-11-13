@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\PerfumeController;
+use App\Http\Controllers\Admin\PerfumeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +29,7 @@ Route::get('/', function () {
 Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(function(){
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('perfumes', PerfumeController::class);
+    Route::get('search_perfume', [PerfumeController::class, 'search'])->name('perfumes.search_perfume');
 });
 
 Route::middleware('auth')->group(function () {

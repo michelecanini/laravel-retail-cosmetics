@@ -37,13 +37,15 @@
                                     <!-- Remember Me -->
                                     <div class="form-group row mb-3">
                                         <div class="col-md-6 offset-md-4">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input id="remember_me" type="checkbox" name="remember"> {{ __('Ricordami') }}
+                                            <div class="form-check">
+                                                <input id="remember_me" type="checkbox" class="form-check-input" name="remember">
+                                                <label class="form-check-label" for="remember_me">
+                                                    {{ __('Ricordami') }}
                                                 </label>
                                             </div>
                                         </div>
                                     </div>
+                                    
         
                                     <div class="col-md-6 offset-md-4 mb-3">
                                         @if (Route::has('password.request'))
