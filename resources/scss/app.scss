@@ -20,6 +20,20 @@ main{
     overflow: hidden;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 10px
+}
+
 /*
 NAVBAR ADMIN SETTINGS
 */
@@ -41,9 +55,8 @@ SIDEBAR LEFT SETTING
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    background-color: black;
     position: fixed;
-    margin-top: 62px;
+    margin-top: 66px;
 }
 
 .top_sidebar{
@@ -107,3 +120,4 @@ TABELLA INDEX
     max-width: 1500px;
     margin-top: 90px;
 }
+

@@ -13,6 +13,7 @@ import AppHeader from "./components/AppHeader.vue";
 import AppCarousel from "./components/AppCarousel.vue";
 import AppScrollingText from "./components/AppScrollingText.vue";
 import AppMain from "./components/AppMain.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 const app = createApp({
     components: {
@@ -20,6 +21,7 @@ const app = createApp({
         AppCarousel,
         AppScrollingText,
         AppMain,
+        AppFooter,
         
     }
 })

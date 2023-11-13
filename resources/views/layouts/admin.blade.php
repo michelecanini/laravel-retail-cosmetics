@@ -90,7 +90,7 @@
             <!--START MAIN-->
             <main>
                 <!--START SIDEBAR LEFT-->
-                <div class="sidebar">
+                <div class="sidebar bg-dark">
                     <div class="top_sidebar">
                     <section>                  
                         <!-- menu-top-sidebar-->

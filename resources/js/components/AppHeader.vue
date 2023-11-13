@@ -33,7 +33,7 @@ export default {
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto mt-1">
                     <li class="nav-item" v-for="(item, index) in menuItems" :key="index">
                         <a class="nav-link" :href="item.routeName">{{ item.label }}</a>
                     </li>
@@ -55,7 +55,7 @@ export default {
 }
 
 a{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .nav-link {
