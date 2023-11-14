@@ -9,7 +9,7 @@ export default {
     },
     data(){
         return{
-            baseUrl: "http://localhost:8000",
+            baseUrl: "https://retailcosmetics.shop/",
             perfumes: [],
             loading: true,
             currentPage: 1,
@@ -51,7 +51,7 @@ export default {
             this.loading = true;
 
             axios.get(`${this.baseUrl}/api/perfumes`, {params: {page: num_page}}).then ((response) => {
-                console.log(response);
+
                 this.perfumes = response.data.results; 
                 this.loading = false;
             });
