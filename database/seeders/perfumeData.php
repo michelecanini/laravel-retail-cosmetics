@@ -65,7 +65,7 @@ return [
         "category" => "Women’s Perfume",
         "size" => "30 ml",
         "price" => 17,80,
-        "image" => "https://img.freepik.com/premium-vector/perfume-bottle-isolated-white_650541-973.jpg"
+        "image" => "https://img.freepik.com/free-vector/blue-glass-spray-bottle_88138-34.jpg?size=626&ext=jpg"
     ],
     [
         "name" => "Flora Gorgeous Gardenia",
@@ -147,7 +147,7 @@ return [
         "category" => "Men’s Perfume",
         "size" => "125 ml",
         "price" => 21,80,
-        "image" => "https://img.freepik.com/premium-vector/perfume-bottle-isolated-white_650541-973.jpg"
+        "image" => "https://img.freepik.com/free-vector/blue-glass-spray-bottle_88138-34.jpg?size=626&ext=jpg"
     ],
     [
         "name" => "Cool Water Intense",
@@ -229,7 +229,7 @@ return [
         "category" => "Women’s Perfume",
         "size" => "100 ml",
         "price" => 55,10,
-        "image" => "https://img.freepik.com/premium-vector/perfume-bottle-isolated-white_650541-973.jpg"
+        "image" => "https://img.freepik.com/free-vector/blue-glass-spray-bottle_88138-34.jpg?size=626&ext=jpg"
     ],
     [
         "name" => "London for Men",
@@ -311,7 +311,7 @@ return [
         "category" => "Men’s Perfume",
         "size" => "100 ml",
         "price" => 51,20,
-        "image" => "https://img.freepik.com/premium-vector/perfume-bottle-isolated-white_650541-973.jpg"
+        "image" => "https://img.freepik.com/free-vector/blue-glass-spray-bottle_88138-34.jpg?size=626&ext=jpg"
     ],
     [
         "name" => "Brazilian Crush Cheirosa '62",
@@ -393,7 +393,7 @@ return [
         "category" => "Women’s Perfume",
         "size" => "75 ml",
         "price" => 64,30,
-        "image" => "https://img.freepik.com/premium-vector/perfume-bottle-isolated-white_650541-973.jpg"
+        "image" => "https://img.freepik.com/free-vector/blue-glass-spray-bottle_88138-34.jpg?size=626&ext=jpg"
     ],
     [
         "name" => "Aqua Kiss",

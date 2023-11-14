@@ -1,8 +1,6 @@
 import './bootstrap';
 import '~resources/scss/app.scss';
 import * as bootstrap from 'bootstrap';
-//import jQuery from 'jquery';
-//window.$ = jQuery;
 import.meta.glob([
     '../img/**'
 ])

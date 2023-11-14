@@ -75,7 +75,7 @@ export default {
   clear: both;
   float: left;
   font-size: 17px;
-  margin-top: 10px;
+  margin-top: 12px;
   display: flex;
 }
 </style>

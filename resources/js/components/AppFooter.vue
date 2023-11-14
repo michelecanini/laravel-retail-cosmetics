@@ -11,28 +11,28 @@ export default {
         <section class="container-xl px-3 px-md-4 px-lg-5 mt-2 py-5 ">
 
             <div class="footer_menu text-center"> 
-                <span class="me-5 ml-5"><a href="#"> Chi Siamo </a></span><i class=""></i> 
-                <span class="me-5 ml-5"><a href="#"> Il Team </a></span><i class=""></i> 
-                <span class="me-5 ml-5"><a href="#"> FAQ </a> </span><i class=""></i> 
-                <span class="me-5 ml-5"><a href="#"> Shop Perfumes </a></span> <i class=""></i> 
+                <span class="me-5 ml-5"><a href="#"> Chi Siamo </a></span>
+                <span class="me-5 ml-5"><a href="#"> Il Team </a></span> 
+                <span class="me-5 ml-5"><a href="#"> FAQ </a> </span> 
+                <span class="me-5 ml-5"><a href="#"> Shop Perfumes </a></span> 
                 <span class="me-5 ml-5"><a href="#"> Contatti </a></span> 
             </div>
 
             <div class="row">
                 <div class="col-sm-3">
                     <div class="info_menu mt-5 text-center">
-                        <ul class=""> 
-                            <li class=""><span class="">+39 300 000 0000</span></li> 
-                            <li class=""><span class="">Viale Centrale 10, 00100 Roma, ITA</span></li> 
-                            <li class=""><a href="#"><span class="">info@retailcosmetics.com</span></a></li> 
-                            <li class=""><span class="">Lun-Ven: 09:30 - 18:00</span></li> 
-                        </ul> 
+                        <div class=""> 
+                            <p><a>+39 300 000 0000</a></p> 
+                            <p><a>Viale Centrale 10, 00100 Roma, ITA</a></p>
+                            <p><a href="#">info@retailcosmetics.com</a></p> 
+                            <p><a>Lun-Ven: 09:30 - 18:00</a></p> 
+                        </div> 
                     </div>
                 </div>
                 
                 <div class="col-sm-6">
                     <div class="mt-5">
-                        <h1 class="col-sm-12 mt-5 text-white text-center mb-5">RETAIL COSMETICS</h1>
+                        <h2 class="col-sm-12 mt-5 text-white text-center mb-5">RETAIL COSMETICS</h2>
                     </div>
                     <div class="text-center icons_menu">
                         <span class="p-4"><a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a></span>
