@@ -51,8 +51,13 @@ class PerfumeController extends Controller
 
         $new_perfume = new Perfume();
 
+        //if($request->hasFile('image')){
+        //    $path = Storage::put('perfume_image', $request->image);
+        //    $form_data ['image'] = $path;
+        //}
+
         if($request->hasFile('image')){
-            $path = Storage::put('perfume_image', $request->image);
+            $path = Storage::disk('public')->put('perfume_image', $request->image);
             $form_data ['image'] = $path;
         }
 
