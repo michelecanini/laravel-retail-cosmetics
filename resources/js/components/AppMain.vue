@@ -9,7 +9,7 @@ export default {
     },
     data(){
         return{
-            baseUrl: "https://retailcosmetics.shop/",
+            baseUrl: "https://retailcosmetics.shop",
             perfumes: [],
             loading: true,
             currentPage: 1,
