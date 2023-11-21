@@ -51,11 +51,6 @@ class PerfumeController extends Controller
 
         $new_perfume = new Perfume();
 
-        //if($request->hasFile('image')){
-        //    $path = Storage::put('perfume_image', $request->image);
-        //    $form_data ['image'] = $path;
-        //}
-
         if($request->hasFile('image')){
             $path = Storage::disk('public')->put('perfume_image', $request->image);
             $form_data ['image'] = $path;
@@ -141,7 +136,6 @@ class PerfumeController extends Controller
 
     public function search(Request $request)
     {
-        //dd($request->query->get('search'));
         $search = $request->query->get('search');
         $perfumes = Perfume::where('name', 'like', '%' . $search . '%')->paginate(10);
         return view('admin.perfumes.index', compact('perfumes'));
