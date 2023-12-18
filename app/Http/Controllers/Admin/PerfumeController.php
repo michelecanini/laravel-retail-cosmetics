@@ -52,9 +52,14 @@ class PerfumeController extends Controller
         $new_perfume = new Perfume();
 
         if($request->hasFile('image')){
-            $path = Storage::disk('public')->put('perfume_image', $request->image);
+            $path = Storage::put('perfume_image', $request->image);
             $form_data ['image'] = $path;
         }
+
+        //if($request->hasFile('image')){
+        //    $path = Storage::disk('public')->put('perfume_image', $request->image);
+        //    $form_data ['image'] = $path;
+        //}
 
         $new_perfume->fill($form_data);
         $new_perfume->save();
@@ -134,10 +139,10 @@ class PerfumeController extends Controller
         return redirect()->route('admin.perfumes.index');
     }
 
-    public function search(Request $request)
-    {
-        $search = $request->query->get('search');
-        $perfumes = Perfume::where('name', 'like', '%' . $search . '%')->paginate(10);
-        return view('admin.perfumes.index', compact('perfumes'));
-    }
+    //public function search(Request $request)
+    //{
+    //    $search = $request->query->get('search');
+    //    $perfumes = Perfume::where('name', 'like', '%' . $search . '%')->paginate(10);
+    //    return view('admin.perfumes.index', compact('perfumes'));
+    //}
 }

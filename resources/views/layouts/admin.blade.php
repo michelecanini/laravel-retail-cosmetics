@@ -25,7 +25,7 @@
 
         <div id="app">
             <nav class="navbar navbar-expand-md navbar-light shadow-sm navbar-sticky-top">
-                <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 8fr 1fr;">
+                <div class="container-fluid d-flex justify-content-between align-items-center">
                     <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                         <div>
                             <!--logo-->
@@ -34,15 +34,7 @@
                             <img src="./img/mobile-logo.png" alt="logo" class="mobile_logo"> -->
                         </div>
                         <!--config('app.name', 'Laravel') -->
-                    </a>
-                    <div class="d-flex align-items-center">
-                        <form class="d-flex w-100 me-3" action="{{route('admin.perfumes.search_perfume')}}" role="search" method="GET">
-                            @csrf
-                            <i class="fa-solid fa-magnifying-glass my-icon"></i>
-                            <input type="search" name="search" id="search" class="form-control bg-light p_left" placeholder="Scrivi il nome del Profumo poi clicca su Cerca a destra, clicca su Cerca senza testo per azzerare la ricerca." aria-label="Search">
-                            <button type="submit" class="btn btn-primary">Cerca</button>
-                        </form>
-                    </div>                    
+                    </a>                     
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                         <span class="navbar-toggler-icon"></span>
@@ -55,7 +47,7 @@
                             </div>
                         @endif
                         <!-- Right Side Of Navbar -->
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav ms-auto" style="margin-right: 70px;">
                             <!-- Authentication Links -->
                             @guest
                             <li class="nav-item">
@@ -75,7 +67,7 @@
                                     <a class="dropdown-item" href="{{ url('admin') }}">{{__('Dashboard')}}</a>
                                     <a class="dropdown-item" href="{{ url('profile') }}">{{__('Profilo')}}</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                        document.getElementById('logout-form').submit();">
+                                                                            document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -85,12 +77,14 @@
                             </li>
                             @endguest
                         </ul>
+                        
                     </div>
                 </div>
             </nav>
-            <!--START MAIN-->
+
+            <!-- Main -->
             <main>
-                <!--START SIDEBAR LEFT-->
+                <!-- Sidebat Left -->
                 <div class="sidebar bg-dark">
                     <div class="top_sidebar">
                     <section>                  
@@ -102,12 +96,9 @@
                         </ul>
                     </section>
                     </div>
-                        
                 </div>
-                <!--END SIDEBAR LEFT-->
                 @yield('content')
             </main>
-            <!--END MAIN-->
         </div>
     </body>
 

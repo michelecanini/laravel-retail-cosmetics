@@ -11,11 +11,11 @@ export default {
         <section class="container-xl px-3 px-md-4 px-lg-5 mt-2 py-5 ">
 
             <div class="footer_menu text-center"> 
-                <span class="me-5 ml-5"><a href="#"> Chi Siamo </a></span>
-                <span class="me-5 ml-5"><a href="#"> Il Team </a></span> 
-                <span class="me-5 ml-5"><a href="#"> FAQ </a> </span> 
-                <span class="me-5 ml-5"><a href="#"> Shop Perfumes </a></span> 
-                <span class="me-5 ml-5"><a href="#"> Contatti </a></span> 
+                <span class="p-4"><a href="#"> Chi Siamo </a></span>
+                <span class="p-4"><a href="#"> Il Team </a></span> 
+                <span class="p-4"><a href="#"> FAQ </a> </span> 
+                <span class="p-4"><a href="#"> Shop Perfumes </a></span> 
+                <span class="p-4"><a href="#"> Contatti </a></span> 
             </div>
 
             <div class="row">

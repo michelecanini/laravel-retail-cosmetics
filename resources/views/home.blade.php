@@ -24,7 +24,6 @@
         <app-main></app-main>
         <app-footer></app-footer>
     </div>
-    
 </body>
 
 </html>

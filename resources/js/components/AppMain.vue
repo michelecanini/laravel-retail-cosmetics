@@ -9,7 +9,7 @@ export default {
     },
     data(){
         return{
-            baseUrl: "https://retailcosmetics.shop",
+            baseUrl: "https://retailcosmetics.eu",  // http://localhost:8000 (development)
             perfumes: [],
             loading: true,
             currentPage: 1,
@@ -152,6 +152,10 @@ export default {
     transition: all 1s ease-out;
 }
 
+.bottom-box:hover {
+    background-position: left bottom;
+}
+
 .image-container img {
     width: 100%;
     height: auto;
@@ -160,13 +164,12 @@ export default {
     object-fit: cover;
 }
 
-.bottom-box:hover {
-    background-position: left bottom;
-}
-
 .pagination {
     display: flex;
     justify-content: flex-end;
+    transform: scale(0.8);
+    display: flex;
+    justify-content: center;
 }
 
 .pagination button {
@@ -184,12 +187,6 @@ export default {
     font-weight: bold;
     background-color: #9b9a9ab6;
     color: #ffffff;
-}
-
-.pagination {
-    transform: scale(0.8);
-    display: flex;
-    justify-content: center;
 }
 
 </style>
